@@ -171,6 +171,7 @@ body{
   .cta-description {
   /* font: 400 24px/1 Public Sans, sans-serif; */
   letter-spacing: -0.12px;
+  font-size: 24px;
   color: rgba(215, 228, 228, 1);
   margin-top: 16px;
   }
@@ -226,6 +227,7 @@ body{
     padding-top: 8px;
     letter-spacing: -0.12px;
     flex: 1;
+    font-size: 24px;
     /* font: 400 24px/32px "Public Sans", -apple-system, Roboto, Helvetica, sans-serif; */
   }
   .section-divider {
@@ -319,6 +321,7 @@ body{
 .project-description-1 {
     letter-spacing: -0.12px;
     margin-top: 16px;
+    font-size: 24px;
     /* font: 400 24px/32px Public Sans, -apple-system, Roboto, Helvetica, sans-serif; */
 }
 .services-section {
@@ -430,6 +433,7 @@ body{
 .portfolio-description {
   flex: 1;
   flex-basis: 0%;
+  font-size: 24px;
 }
 .footer {
   display: flex;
