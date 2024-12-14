@@ -435,6 +435,121 @@ body{
   flex-basis: 0%;
   font-size: 24px;
 }
+.testimonials-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 80px;
+}
+.testimonials-section {
+  background-color: rgba(2, 13, 13, 1);
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 0;
+}
+.section-title {
+  color: rgba(215, 228, 228, 1);
+  letter-spacing: -0.96px;
+  text-align: center;
+  align-self: center;
+  z-index: 1;
+  font: 700 48px/1 Roboto Serif, sans-serif;
+}
+.testimonials-grid {
+  z-index: 1;
+  display: flex;
+  margin-top: 48px;
+  width: 100%;
+  align-items: start;
+  gap: 24px;
+  overflow: hidden;
+  justify-content: start;
+}
+.testimonial-card {
+  border-radius: 16px;
+  background-color: rgba(184, 224, 224, 0.12);
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: start;
+  width: 288px;
+  padding: 24px;
+  border: 2px solid transparent;
+}
+.testimonial-card:hover{
+  scale:1.1;
+}
+.profile-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.07px;
+  justify-content: start;
+  font: 15px/1 Public Sans, sans-serif;
+}
+.profile-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 48px;
+  border-radius: 999px;
+  background-blend-mode: normal;
+  align-self: stretch;
+  margin: auto 0;
+}
+.profile-info {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1;
+}
+.profile-name {
+  color: rgba(215, 228, 228, 1);
+  font-weight: 700;
+}
+.profile-title {
+  color: rgba(209, 235, 235, 0.62);
+  font-weight: 400;
+}
+.quote-wrapper {
+  display: flex;
+  margin-top: 16px;
+  width: 100%;
+  padding-bottom: 8px;
+  gap: 12px;
+  justify-content: start;
+}
+.quote-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 48px;
+}
+.quote-text {
+  color: rgba(215, 228, 228, 1);
+  letter-spacing: -0.1px;
+  flex: 1;
+  font: 400 20px/24px Public Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.section-divider {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  min-height: 0;
+  width: 1536px;
+  left: -96px;
+  right: -96px;
+  bottom: 0;
+  height: 0;
+  border: 2px solid transparent;
+}
 .footer {
   display: flex;
   justify-content: space-between;
