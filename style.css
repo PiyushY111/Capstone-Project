@@ -448,6 +448,7 @@ body{
   width: 100%;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   padding: 48px 0;
 }
 .section-title {
@@ -462,26 +463,39 @@ body{
   z-index: 1;
   display: flex;
   margin-top: 48px;
-  width: 100%;
+  /* width: 50%; */
   align-items: start;
   gap: 24px;
-  overflow: hidden;
+  overflow-x: scroll;
   justify-content: start;
+  /* position: relative; */
 }
+.testimonial-card-gradient{
+  width: 10rem;
+  height: 14.4rem;
+  position: absolute;
+  right: 0;
+  top: 9rem;
+  z-index: 1;
+  background: linear-gradient(90deg,transparent,black);
+}
+
+
 .testimonial-card {
   border-radius: 16px;
   background-color: rgba(184, 224, 224, 0.12);
   display: flex;
   min-width: 240px;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
   justify-content: start;
   width: 288px;
   padding: 24px;
   border: 2px solid transparent;
+  transition: all 0.2s;
 }
 .testimonial-card:hover{
-  scale:1.1;
+  scale:1.05;
 }
 .profile-container {
   display: flex;
@@ -509,6 +523,12 @@ body{
   justify-content: start;
   flex: 1;
 }
+.profile-info h3{
+  margin:0.5rem 0;
+}
+.profile-info p{
+  font-size: 0.7rem;
+}
 .profile-name {
   color: rgba(215, 228, 228, 1);
   font-weight: 700;
@@ -519,11 +539,15 @@ body{
 }
 .quote-wrapper {
   display: flex;
-  margin-top: 16px;
+  margin-top: 10px;
   width: 100%;
   padding-bottom: 8px;
   gap: 12px;
   justify-content: start;
+}
+.quote-wrapper p{
+  color:rgba(255,255,255,0.6);
+  font-size: 0.9rem;
 }
 .quote-icon {
   display: flex;
