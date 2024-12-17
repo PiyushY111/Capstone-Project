@@ -586,7 +586,7 @@ body{
 
 }
 .service-card:hover{
-  scale:1.1
+  scale:1.03
 }
 .service-image {
   width: 100%;
@@ -809,4 +809,77 @@ body{
 }
 .contact-button:hover{
   scale:1.2
+}
+/* Responsive Overflow Prevention */
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent text overflow for headings and long text */
+.hero-title, 
+.cta-title, 
+.about-description, 
+.project-title, 
+.service-title,
+.section-title {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+}
+
+/* Ensure images and containers don't overflow */
+.project-image, 
+.service-image, 
+.hero-image, 
+.feature-card-1 {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Text container overflow handling */
+.description, 
+.project-description-1, 
+.service-description, 
+.quote-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+/* Responsive container adjustments */
+.header-container, 
+.about-section, 
+.services-section {
+  max-width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+
+/* Horizontal scroll prevention for flex containers */
+.project-row {
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+}
+
+/* Additional responsive text sizing for very small screens */
+@media screen and (max-width: 375px) {
+  .hero-title, 
+  .cta-title, 
+  .about-description,
+  .project-title {
+    font-size: clamp(24px, 8vw, 36px);
+    line-height: 1.2;
+  }
+
+  .description, 
+  .project-description-1{
+    font-size: clamp(16px, 4vw, 20px);
+  }
 }
