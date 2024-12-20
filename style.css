@@ -21,7 +21,6 @@ body {
   gap: 20px;
 }
 .brand-logo {
-  align-self: center;
   min-height: 48px;
   gap: 12px;
   letter-spacing: -1.68px;
@@ -129,14 +128,12 @@ body {
   opacity: 0;
   animation-delay: 0.2s;
 }
-@media (hover: hover) {
   .brand-logo:hover {
     transform: scale(1.05) rotate(2deg);
   }
   .nav-link:hover {
     transform: translateY(-3px);
   }
-}
 .hero-section {
   background-color: rgba(2, 13, 13, 1);
   display: flex;
@@ -158,8 +155,6 @@ body {
   letter-spacing: -0.02em;
   font-family: 'Roboto Serif', -apple-system, Roboto, Helvetica, sans-serif;
   transition: all 0.3s ease;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 .hero-title:hover {
   transform: scale(1.05);
@@ -228,9 +223,9 @@ body {
   width: 100%;
   align-items: start;
   gap: 24px;
-  justify-content: start;
   flex-wrap: wrap;
   padding: 48px 0;
+  justify-content: space-evenly;
 }
 .project-row:not(:first-child) {
   padding-top: 0;
@@ -240,9 +235,6 @@ body {
   min-width: 240px;
   min-height: 333px;
   flex-direction: column;
-  justify-content: start;
-  flex: 1;
-  flex-basis: calc(33.333% - 24px);
   transition: all 0.2s ease-out;
   margin-bottom: 24px;
 }
@@ -252,7 +244,6 @@ body {
 .project-image {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -278,17 +269,11 @@ body {
   letter-spacing: -0.09px;
   font-weight: 400;
 }
-@media screen and (max-width: 1024px) {
-  .project-card {
-    flex-basis: calc(50% - 24px);
-  }
-}
 @media screen and (max-width: 768px) {
   .project-row {
     gap: 16px;
   }
   .project-card {
-    flex-basis: 100%;
     min-width: 100%;
   }
   .project-title {
@@ -373,28 +358,27 @@ body {
   justify-content: start;
   padding: 96px 0;
 }
+.content-wrapper >.description{
+  width: 40vw;
+}
 .content-wrapper {
   display: flex;
   min-width: 240px;
   align-items: start;
   gap: 40px 96px;
-  justify-content: start;
+  justify-content: space-between;
+  width: 100%;
   flex-wrap: wrap;
-  flex: 1;
-  flex-basis: 0%;
   padding: 48px 0;
 }
 .heading {
   letter-spacing: -0.96px;
-  flex: 1;
-  flex-basis: 0%;
   font: 700 48px/1 "Roboto Serif", sans-serif;
 }
 .description {
   min-width: 240px;
   padding-top: 8px;
   letter-spacing: -0.12px;
-  flex: 1;
   font-size: 24px;
 }
 .section-divider {
@@ -423,7 +407,6 @@ body {
   color: rgba(215, 228, 228, 1);
   font: 400 48px/52px 'Roboto Serif', -apple-system, Roboto, Helvetica, sans-serif;
   letter-spacing: -0.96px;
-  flex: 1;
 }
 .content-spacer {
   display: flex;
@@ -431,8 +414,6 @@ body {
   max-width: 672px;
   min-width: 240px;
   height: auto;
-  aspect-ratio: 672 / 312;
-  flex: 1;
 }
 @media screen and (max-width: 1024px) {
   .about-section {
@@ -487,15 +468,12 @@ body {
   justify-content: space-evenly;
   gap: 3rem;
   flex-wrap: wrap;
-  flex: 1;
-  flex-basis: 0%;
   margin: auto 0;
   border: 1px solid transparent;
   min-width: 240px;
   background-color: rgba(16, 25, 26);
 }
 .project-image-wrapper-1 {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -507,13 +485,10 @@ body {
   width: 100%;
 }
 .content-wrapper-1 {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   color: rgba(215, 228, 228, 1);
   justify-content: flex-start;
-  flex: 1;
-  flex-basis: 0%;
   margin: auto 0;
   min-width: 240px;
   max-width: 33rem;
@@ -563,16 +538,13 @@ body {
   flex-wrap: wrap;
 }
 .service-card {
-  align-self: stretch;
   display: flex;
   min-width: 240px;
   flex-direction: column;
   justify-content: start;
-  flex: 1;
-  flex-basis: 0%;
+  align-items: center;
   margin: auto 0;
   transition: all 0.2s;
-
 }
 .service-card:hover {
   scale: 1.03
@@ -600,7 +572,7 @@ body {
   margin-top: 12px;
 }
 .service-button {
-  align-self: center;
+  width: 8rem;
   border-radius: 8px;
   background-color: rgb(0, 255, 255);
   margin-top: 24px;
@@ -627,12 +599,9 @@ body {
   min-width: 240px;
   width: 648px;
   height: 154px;
-  flex: 1;
-  flex-basis: 0%;
 }
 .portfolio-description {
-  flex: 1;
-  flex-basis: 0%;
+  width: 57%;
   font-size: 24px;
 }
 .testimonials-wrapper {
@@ -655,14 +624,12 @@ body {
   letter-spacing: -0.96px;
   text-align: center;
   align-self: center;
-  z-index: 1;
   font-family: 'Roboto Serif', sans-serif;
   font-weight: 700;
   font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1;
 }
 .testimonials-grid {
-  z-index: 1;
   display: flex;
   margin-top: clamp(24px, 4vw, 48px);
   align-items: start;
@@ -671,14 +638,6 @@ body {
   justify-content: start;
   padding-bottom: 1rem;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-.testimonials-grid::-webkit-scrollbar {
-  display: none;
-}
-.testimonials-grid {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 .testimonial-card-gradient {
   display: none;
@@ -709,22 +668,16 @@ body {
   font-size: 0.9rem;
 }
 .profile-image {
-  aspect-ratio: 1;
   object-fit: contain;
-  object-position: center;
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-blend-mode: normal;
-  align-self: stretch;
   margin: auto 0;
 }
 .profile-info {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  flex: 1;
 }
 .profile-info h3 {
   margin: 0.5rem 0;
@@ -759,12 +712,10 @@ body {
   align-items: center;
   justify-content: start;
   width: 48px;
-  flex-shrink: 0;
 }
 .quote-text {
   color: rgba(215, 228, 228, 1);
   letter-spacing: -0.1px;
-  flex: 1;
   font-family: 'Public Sans', -apple-system, Roboto, Helvetica, sans-serif;
   font-weight: 400;
   font-size: clamp(1rem, 3vw, 1.25rem);
@@ -772,7 +723,6 @@ body {
 }
 .section-divider {
   position: absolute;
-  z-index: 1;
   display: flex;
   min-height: 0;
   left: -10%;
@@ -808,6 +758,28 @@ body {
   .quote-text {
     font-size: clamp(0.9rem, 3.5vw, 1.1rem);
   }
+  .testimonials-wrapper {
+    padding: 0;
+  }
+  .content-wrapper >.description{
+    width: 100%;
+  }
+  .content-wrapper {
+    justify-content:center;
+  }
+
+.about-description{
+  width: 100%;
+}
+.feature-card-1 {
+  padding-right: 0;
+}
+.portfolio-description {
+  width: 100%;
+}
+.portfolio-section {
+  justify-content: center;
+}
 }
 @media screen and (max-width: 480px) {
   .testimonials-section {
@@ -863,9 +835,6 @@ html {
 .project-title,
 .service-title,
 .section-title {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
   max-width: 100%;
 }
 .service-image,
@@ -879,8 +848,6 @@ html {
 .project-description-1,
 .service-description,
 .quote-text {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
   max-width: 100%;
 }
 .header-container,
